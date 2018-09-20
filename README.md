@@ -1,5 +1,6 @@
 # This Package will contain a lot more in the near future.
 > At the moment you can use it to easily authorize.
+https://www.npmjs.com/package/@jamesbacon/youtubeapi
 
 ## How to.
 
