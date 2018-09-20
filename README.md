@@ -7,7 +7,7 @@ https://www.npmjs.com/package/@jamesbacon/youtubeapi
 You first need to get your credentials.
 Follow Step One of this guide to get them: https://developers.google.com/youtube/v3/quickstart/nodejs
 Once you have them create a new folder in the root directory named ".credentials" and place them in there.
-Now follow step 3 to get your token. Once you have done that navigate to your user folder e.g. "C:\Users\james" and open "./credentials".
+Now follow step 3 to get your token. Once you have done that navigate to your user folder e.g. "C:\Users\james" and open ".credentials".
 Copy the .json file that's there (If there's more than two copy the one that says google-apis-nodejs-quickstart) over to your own ".credentials" folder.
 Rename it to token.json and you're all set.
 
