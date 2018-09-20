@@ -1,15 +1,17 @@
 # This Package will contain a lot more in the near future.
 > At the moment you can use it to easily authorize.
-https://www.npmjs.com/package/@jamesbacon/youtubeapi
+> https://www.npmjs.com/package/@jamesbacon/youtubeapi
 
 ## How to.
 
 You first need to get your credentials.
-Follow Step One of this guide to get them: https://developers.google.com/youtube/v3/quickstart/nodejs
-Once you have them create a new folder in the root directory named ".credentials" and place them in there.
-Now follow step 3 to get your token. Once you have done that navigate to your user folder e.g. "C:\Users\james" and open ".credentials".
-Copy the .json file that's there (If there's more than two copy the one that says google-apis-nodejs-quickstart) over to your own ".credentials" folder.
-Rename it to token.json and you're all set.
+1. Follow Step One of this guide to get them: [developers.google.com](https://developers.google.com/youtube/v3/quickstart/nodejs)
+2. Once you have them create a new folder in your root project folder named ".credentials".
+3. Place the new file you got from Step One into the new folder.
+4. Now follow step 3 (The Google Developers Step 3 not this one) to get your token.
+5. Once you have done that navigate to your user folder e.g. "C:\Users\james" and open ".credentials".
+6. Copy the .json file that's there (If there's more than two copy the one that says google-apis-nodejs-quickstart) over to your own ".credentials" folder.
+7. Rename it to token.json and you're all set.
 
 Below is a simple template of what it looks like.
 
@@ -35,3 +37,6 @@ service.commentThreads.list({
 ```
 
 Take a look around and you'll see where this project is going.
+This is my first ever public project so be easy on me, hahahaha.
+
+## In the near future this module will be a Promise based module for interacting with the v3 YouTube API.
