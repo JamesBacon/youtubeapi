@@ -1,5 +1,4 @@
-# This Package will contain a lot more in the near future.
-> At the moment you can use it to easily authorize.
+# YouTubeAPI
 > https://www.npmjs.com/package/@jamesbacon/youtubeapi
 
 ## How to.
@@ -16,27 +15,21 @@ You first need to get your credentials.
 Below is a simple template of what it looks like.
 
 ```javascript
+const youtube = require('@jamesbacon/youtubeapi');
+
 var credentials = require('./.credentials/client_secret.json').installed;
 var token = require('./.credentials/token.json');
 
-var google = require('googleapis').google;
-var service = google.youtube('v3');
+const oauth = youtube.authorize(credentials, token);
 
-var oauth = require('@jamesbacon/youtubeapi').authorize(credentials, token);
-
-service.commentThreads.list({
+youtube.commentThread.list({
     auth: oauth,
     part: 'snippet, replies',
     videoId: 'KIIm9PszZDM',
     maxResults: '1'
-}, (error, response) => {
-    if (error) console.log(error)
-    else
-    console.log(response);
-});
+}).then(thread => {
+    console.log(thread);
+}).catch(error => console.log(error));
 ```
 
-Take a look around and you'll see where this project is going.
 This is my first ever public project so be easy on me, hahahaha.
-
-## In the near future this module will be a Promise based module for interacting with the v3 YouTube API.
